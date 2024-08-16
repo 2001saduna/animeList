@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="anime-list">
+    {% for anime in anime %}
+        <div class="anime-card">
+            <a href="{% url 'anime_detail' anime.id %}">
+                {% if anime.image %}
+                    <img src="{{ anime.image.url }}" alt="{{ anime.name }}">
+                {% endif %}
+                <h3>{{ anime.name|capfirst }}</h3>
+            </a>
+            <p>{{ anime.description|truncatewords:20 }}</p>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
+

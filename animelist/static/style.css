@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.site-header {
+    background-color: #676c71;
+    color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-container {
+    flex: 0 0 auto;
+}
+
+.logo-image {
+    max-width: 100px; /* Adjust the size of the logo */
+    height: auto;
+}
+
+.site-title-container {
+    flex: 1;
+    text-align: center;
+}
+
+#site-title {
+    margin: 0;
+    font-size: 2.5rem; /* Larger font size for emphasis */
+    font-family: 'Poppins', sans-serif; /* Use the Google Font */
+    color: #dd6400; /* A nice, warm color */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow for better readability */
+}
+
+.site-title-container p {
+    margin: 0;
+    font-size: 1rem;
+    color: #d1d1d1;
+}
+
+/* Main Content Styles */
+.main-wrapper {
+    padding: 20px;
+}
+
+.anime-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.anime-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: calc(33% - 20px);
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.anime-card:hover {
+    transform: translateY(-5px);
+}
+
+.anime-card img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensure images fit well within their containers */
+}
+
+.anime-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.25rem;
+}
+
+.anime-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Anime Detail Page Styles */
+.anime-detail-container {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Space between image and info */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.anime-image img {
+    max-width: 300px; /* Adjust the size of the image */
+    height: auto;
+    border-radius: 8px; /* Optional: add rounded corners to the image */
+}
+
+.anime-info {
+    flex: 1;
+}
+
+.anime-info h3 {
+    margin-top: 0;
+}
+
+.anime-info p {
+    margin-bottom: 10px; /* Add spacing between paragraphs */
+}
+
+/* Footer Styles */
+#colophon {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.inner-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}

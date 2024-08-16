@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="anime-detail-container">
+    <div class="anime-image">
+        <img src="{{ anime.image.url }}" alt="{{ anime.name }}">
+    </div>
+    <div class="anime-info">
+        <h3>{{ anime.name|capfirst }}</h3>
+        <p>Produced by: {{ anime.producer }}</p>
+        <p>Release Date: {{ anime.release_date|date:"M d Y" }}</p>
+        <p>{{ anime.description }}</p>
+    </div>
+</div>
+{% endblock %}
+
+
+
+
